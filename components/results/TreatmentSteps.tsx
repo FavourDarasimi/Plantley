@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export function TreatmentSteps({ steps }: { steps: string[] }) {
   return (
     <div>
-      <h3 className="text-sm font-medium text-[var(--text-primary)] mb-3">Treatment</h3>
+      <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Treatment</h3>
       <ol className="space-y-3">
         {steps.map((step, i) => (
           <motion.li

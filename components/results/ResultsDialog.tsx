@@ -55,7 +55,7 @@ export function ResultsDialog() {
             <div className="flex items-start justify-between p-6 pb-4 border-b border-[var(--border)]">
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <h2 className="text-lg font-medium text-[var(--text-primary)] truncate">
+                  <h2 className="text-2xl font-semibold text-[var(--text-primary)] truncate">
                     {result.disease_name}
                   </h2>
                   <SeverityBadge severity={result.severity} />
