@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
+import { ResultsDialog } from '@/components/results/ResultsDialog'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <div id="hero">
         <HeroSection />
       </div>
-      {/* ResultsDialog — Phase 4 */}
+      <ResultsDialog />
       <div id="how-it-works">
         {/* HowItWorksSection — Phase 5 */}
       </div>
