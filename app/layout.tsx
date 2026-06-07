@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { DM_Sans, Instrument_Serif, JetBrains_Mono } from "next/font/google"
 import { ThemeProvider } from "@/context/ThemeContext"
 import { DetectionProvider } from "@/context/DetectionContext"
+import { BackgroundEffects } from "@/components/ui/BackgroundEffects"
 import "./globals.css"
 
 const dmSans = DM_Sans({
@@ -42,6 +43,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         <ThemeProvider>
           <DetectionProvider>
+            <BackgroundEffects />
             {children}
           </DetectionProvider>
         </ThemeProvider>

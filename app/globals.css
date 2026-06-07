@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --font-sans: var(--font-sans), "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), "Instrument Serif", ui-serif, Georgia, serif;
@@ -59,4 +61,24 @@
 body {
   background: var(--bg-secondary);
   color: var(--text-primary);
+}
+
+@keyframes gradient-drift {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(8%, -12%) scale(1.05) rotate(2deg); }
+  66% { transform: translate(-6%, 4%) scale(0.95) rotate(-1deg); }
+}
+
+@keyframes gradient-drift-reverse {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(-8%, 6%) scale(0.95) rotate(-2deg); }
+  66% { transform: translate(10%, -8%) scale(1.05) rotate(1deg); }
+}
+
+.animate-gradient-drift {
+  animation: gradient-drift 20s ease-in-out infinite;
+}
+
+.animate-gradient-drift-reverse {
+  animation: gradient-drift-reverse 25s ease-in-out infinite;
 }
