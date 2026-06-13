@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 export function ConfidenceBar({ confidence }: { confidence: number }) {
-  const percent = Math.round(confidence * 100)
+  const percent = Math.round(confidence > 1 ? confidence : confidence * 100)
 
   return (
     <div className="space-y-1.5">

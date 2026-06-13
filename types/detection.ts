@@ -1,14 +1,6 @@
-export type Severity = 'mild' | 'moderate' | 'severe' | 'healthy'
-
 export interface DetectionResult {
-  disease_name: string
-  scientific_name: string
-  crop: string
-  severity: Severity
+  predicted_class: string
   confidence: number
-  causes: string[]
-  treatment_steps: string[]
-  prevention_tips: string[]
 }
 
 export interface DetectionError {

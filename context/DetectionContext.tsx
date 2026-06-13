@@ -10,7 +10,7 @@ interface DetectionContextValue {
   isLoading: boolean
   error: string | null
   isDialogOpen: boolean
-  detect: (file: File, crop?: string) => Promise<void>
+  detect: (file: File) => Promise<void>
   closeDialog: () => void
   reset: () => void
 }
@@ -23,13 +23,13 @@ export function DetectionProvider({ children }: { children: ReactNode }) {
   const [error, setError] = useState<string | null>(null)
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
-  const detect = useCallback(async (file: File, crop?: string) => {
+  const detect = useCallback(async (file: File) => {
     setIsLoading(true)
     setError(null)
     setResult(null)
 
     try {
-      const res = await detectDisease(file, crop)
+      const res = await detectDisease(file)
       setResult(res)
       setIsDialogOpen(true)
     } catch (err) {
