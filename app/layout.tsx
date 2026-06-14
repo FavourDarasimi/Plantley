@@ -40,7 +40,7 @@ export default function RootLayout({
       className={`${dmSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-full flex flex-col font-sans overflow-x-hidden">
         <ThemeProvider>
           <DetectionProvider>
             <BackgroundEffects />

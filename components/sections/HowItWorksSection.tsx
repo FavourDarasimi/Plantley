@@ -74,7 +74,7 @@ export function HowItWorksSection() {
         </motion.h2>
         <motion.div
           variants={containerVariants}
-          className="flex flex-col md:grid md:grid-cols-3 gap-6"
+          className="flex flex-col md:grid md:grid-cols-3 gap-6 min-w-0"
         >
           {steps.map((step) => (
             <motion.div

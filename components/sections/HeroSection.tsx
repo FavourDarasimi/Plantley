@@ -37,7 +37,7 @@ export function HeroSection() {
         </motion.p>
         <motion.h1
           variants={item}
-          className="text-4xl md:text-5xl font-display italic text-[var(--text-primary)] leading-tight mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl font-display italic text-[var(--text-primary)] leading-tight mb-4"
         >
           Detect plant disease
           <br />

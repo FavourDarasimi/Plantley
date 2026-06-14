@@ -9,7 +9,7 @@ import { ResultsDialog } from "@/components/results/ResultsDialog";
 
 export default function Home() {
   return (
-    <main className="pt-14 max-w-7xl mx-auto">
+    <main className="pt-14 w-full max-w-7xl mx-auto px-4 sm:px-6">
       <Navbar />
       <div id="hero">
         <HeroSection />

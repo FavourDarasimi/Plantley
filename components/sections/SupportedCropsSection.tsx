@@ -53,7 +53,7 @@ export function SupportedCropsSection() {
         <h2 className="text-3xl font-medium text-[var(--text-primary)] mb-10">
           Crops we can help diagnose
         </h2>
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
           {crops.map((crop, i) => (
             <motion.span
               key={crop}
