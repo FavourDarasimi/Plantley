@@ -10,6 +10,7 @@ import { ScanningState } from "@/components/upload/ScanningState";
 import { cn } from "@/lib/utils";
 
 const ACCEPTED_TYPES = ["image/jpeg", "image/png", "image/webp"];
+const MAX_FILE_SIZE = 2 * 1024 * 1024; // 2 MB
 
 export function UploadZone() {
   const { isLoading, detect, error } = useDetection();
@@ -22,6 +23,10 @@ export function UploadZone() {
     (file: File) => {
       if (!ACCEPTED_TYPES.includes(file.type)) {
         setFileError("Please upload a JPG, PNG, or WebP image");
+        return;
+      }
+      if (file.size > MAX_FILE_SIZE) {
+        setFileError("Image must be under 2MB");
         return;
       }
       setFileError(null);
