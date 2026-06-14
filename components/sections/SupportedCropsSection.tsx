@@ -3,18 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 
 const crops = [
-  "Maize",
-  "Cassava",
   "Tomato",
-  "Rice",
-  "Yam",
-  "Cowpea",
-  "Groundnut",
-  "Sorghum",
-  "Millet",
-  "Plantain",
-  "Sweet Potato",
-  "Cocoa",
 ];
 
 const containerVariants = {
@@ -48,10 +37,10 @@ export function SupportedCropsSection() {
         className="max-w-7xl mx-auto text-center"
       >
         <p className="text-xs uppercase tracking-widest text-green-600 mb-4">
-          Supported Crops
+           Supported Crop
         </p>
         <h2 className="text-3xl font-medium text-[var(--text-primary)] mb-10">
-          Crops we can help diagnose
+          We specialise in tomato diagnosis
         </h2>
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
           {crops.map((crop, i) => (

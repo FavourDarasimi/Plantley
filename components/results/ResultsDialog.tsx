@@ -75,7 +75,7 @@ export function ResultsDialog() {
               <h2 className="text-2xl font-bold text-white">
                 {formatClassName(result.predicted_class)}
               </h2>
-              <p className="text-sm text-green-100 mt-1">Predicted Disease</p>
+                <p className="text-sm text-green-100 mt-1">Prediction</p>
             </div>
 
             <div className="px-6 pb-6 -mt-6">
@@ -104,7 +104,7 @@ export function ResultsDialog() {
                   className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-green-600 text-white text-sm font-medium hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-400 transition-colors"
                 >
                   <RefreshIcon size={18} strokeWidth={2} />
-                  Scan another plant
+                  Scan another tomato leaf
                 </button>
               </div>
             </div>

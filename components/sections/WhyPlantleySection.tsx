@@ -8,7 +8,7 @@ const features = [
     icon: ZapIcon,
     title: "Lightning-Fast",
     description:
-      "Get results in seconds, not days. No waiting for lab reports.",
+      "Detect leaf mold or confirm healthy leaves in seconds. No waiting for lab reports.",
   },
   {
     icon: LockIcon,
@@ -20,7 +20,7 @@ const features = [
     icon: Location01Icon,
     title: "Built for West Africa",
     description:
-      "Trained on local crops and diseases. Made for Nigerian farmers.",
+      "Specialised in tomato diseases. Made for Nigerian farmers.",
   },
 ];
 
@@ -63,7 +63,7 @@ export function WhyPlantleySection() {
           variants={cardVariants}
           className="text-3xl font-medium text-[var(--text-primary)] mb-10"
         >
-          Built for farmers, by people who care
+          Built for tomato farmers, by people who care
         </motion.h2>
         <motion.div
           variants={containerVariants}

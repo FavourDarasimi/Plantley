@@ -97,7 +97,7 @@ export function UploadZone() {
         <Leaf01Icon size={48} className="text-green-500" strokeWidth={1.5} />
         <div>
           <p className="text-base font-medium text-[var(--text-primary)]">
-            Upload your leaf photo
+            Upload your tomato leaf photo
           </p>
           <p className="text-sm text-[var(--text-tertiary)] mt-1">
             Drag & drop or choose an option below

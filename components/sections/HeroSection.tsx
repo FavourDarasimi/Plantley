@@ -33,13 +33,13 @@ export function HeroSection() {
           variants={item}
           className="text-xs uppercase tracking-widest text-green-600 mb-4"
         >
-          AI-Powered Crop Care
+          AI-Powered Tomato Care
         </motion.p>
         <motion.h1
           variants={item}
           className="text-3xl sm:text-4xl md:text-5xl font-display italic text-[var(--text-primary)] leading-tight mb-4"
         >
-          Detect plant disease
+          Detect tomato disease
           <br />
           in seconds
         </motion.h1>
@@ -47,8 +47,8 @@ export function HeroSection() {
           variants={item}
           className="text-base text-[var(--text-secondary)] mb-8"
         >
-          Upload or take a photo of a plant leaf and receive an instant
-          diagnosis — powered by AI.
+          Upload or take a photo of a tomato leaf and receive an instant
+            result — powered by AI.
         </motion.p>
         <motion.div variants={item}>
           <UploadZone />

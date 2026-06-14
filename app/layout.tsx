@@ -24,9 +24,9 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Plantley — Detect plant disease in seconds",
+  title: "Plantley — Detect tomato disease in seconds",
   description:
-    "AI-powered crop disease detection. Upload or take a photo of a plant leaf and receive an instant diagnosis.",
+    "AI-powered tomato disease detection. Upload or take a photo of a tomato leaf and receive an instant result.",
 }
 
 export default function RootLayout({

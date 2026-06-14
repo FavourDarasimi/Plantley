@@ -22,7 +22,7 @@ export function ScanningState() {
       </div>
       <div className="text-center">
         <p className="text-base text-[var(--text-secondary)]">
-          Analysing your leaf...
+          Analysing your tomato leaf...
         </p>
         <p className="text-sm text-[var(--text-tertiary)] mt-1">
           This usually takes 3–5 seconds

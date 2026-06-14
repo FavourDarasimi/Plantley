@@ -7,34 +7,34 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "How accurate is the disease detection?",
+    question: "How accurate is the detection?",
     answer:
-      "Plantley uses Claude Vision AI, one of the most advanced AI models available. While it is highly accurate, we recommend consulting a local agricultural extension agent for critical cases.",
+      "Plantley uses a custom-trained model specialised for tomato leaf analysis. While it is highly accurate for leaf mold detection, we recommend consulting a local agricultural extension agent for critical cases.",
   },
   {
-    question: "What crops do you support?",
+    question: "What can the model detect?",
     answer:
-      "We currently support 12 major crops including maize, cassava, tomato, rice, yam, cowpea, groundnut, sorghum, millet, plantain, sweet potato, and cocoa. We are expanding to more crops regularly.",
+      "Our model is trained to detect two classes: leaf mold and healthy leaves. If your tomato plant is affected by leaf mold, the model will flag it. Otherwise, it will classify it as healthy. We are actively working to expand detection to more tomato diseases in future updates.",
   },
   {
     question: "Is Plantley really free?",
     answer:
-      "Yes, Plantley is completely free for all farmers. No subscriptions, no hidden fees. We believe access to crop disease diagnosis should be available to everyone.",
+      "Yes, Plantley is completely free for all tomato farmers. No subscriptions, no hidden fees. We believe access to tomato disease detection should be available to everyone.",
   },
   {
     question: "Do I need internet to use it?",
     answer:
-      "Yes, you need an internet connection to upload the photo and receive the diagnosis. The AI processing happens on our servers. We are working on offline support for a future release.",
+      "Yes, you need an internet connection to upload the photo and receive the result. The AI processing happens on our servers. We are working on offline support for a future release.",
   },
   {
-    question: "How do I take a good leaf photo?",
+    question: "How do I take a good tomato leaf photo?",
     answer:
-      "Place the affected leaf on a plain, light-coloured background. Ensure good lighting (natural daylight is best). Hold your phone steady and capture the leaf up close, showing both healthy and diseased areas.",
+      "Place the tomato leaf on a plain, light-coloured background. Ensure good lighting (natural daylight is best). Hold your phone steady and capture the leaf up close.",
   },
   {
-    question: "What should I do after receiving a diagnosis?",
+    question: "Does the tool provide treatment advice?",
     answer:
-      "Follow the treatment steps provided in the diagnosis. For severe cases, we recommend also consulting with a local agricultural expert. You can scan another leaf anytime if symptoms change.",
+      "No, the tool only detects whether the leaf is healthy or has leaf mold. It does not provide treatment steps or detailed diagnosis. Please consult a local agricultural expert for advice on managing leaf mold.",
   },
 ];
 

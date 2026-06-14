@@ -13,21 +13,21 @@ const steps = [
     icon: ImageUploadIcon,
     title: "Upload a photo",
     description:
-      "Take a clear photo of the affected leaf or upload one from your gallery.",
+      "Take a clear photo of the affected tomato leaf or upload one from your gallery.",
   },
   {
     number: 2,
     icon: AiInnovation01Icon,
     title: "AI analysis",
     description:
-      "Our AI examines the image, identifies the disease, and evaluates severity.",
+      "Our AI examines the image and detects whether the leaf is healthy or has leaf mold.",
   },
   {
     number: 3,
     icon: TaskDone01Icon,
-    title: "Get your diagnosis",
+    title: "Get your result",
     description:
-      "Receive a detailed report with causes, treatment steps, and prevention tips.",
+      "See whether your tomato leaf is healthy or affected by leaf mold, along with a confidence score.",
   },
 ];
 
